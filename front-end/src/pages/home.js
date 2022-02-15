@@ -18,7 +18,7 @@ function Home() {
         <div>
             <ul>
                 {todos.length === 0
-                    ? <></>
+                    ? <>Está Vazio por Aqui!!!</>
                     : todos.map(({ _id, task, status, created }, index) => (
                         <ToDoCard
                             key={index}
