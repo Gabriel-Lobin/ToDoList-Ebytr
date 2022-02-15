@@ -1,0 +1,19 @@
+{
+  "name": "trybeblitz",
+  "version": "1.0.0",
+  "description": "projeto do processo seletivo trybe blitz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Gabriel-Lobin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1"
+  }
+}
