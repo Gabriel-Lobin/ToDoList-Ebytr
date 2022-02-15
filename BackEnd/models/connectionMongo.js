@@ -1,4 +1,4 @@
-const mongodb = require('mongodb');
+const mongodb = require('mongodb').MongoClient;
 require('dotenv').config();
 
 const MONGO_DB_URL = `mongodb://${process.env.HOST || 'mongodb'}:27017/ToDoListEbytr`;
