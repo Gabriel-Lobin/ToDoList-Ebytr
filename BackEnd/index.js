@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const errorMiddleware = require('./middlewares/errorMiddleware.js');
 const {
     getAllListOfToDo,
@@ -12,6 +13,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['POST', 'GET']
+}));
 
 // rotas ***********
 
