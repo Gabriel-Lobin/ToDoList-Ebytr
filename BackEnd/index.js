@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors({
     origin: 'http://localhost:3000',
-    methods: ['POST', 'GET']
+    methods: ['POST', 'GET', 'DELETE', 'PUT']
 }));
 
 // rotas ***********
@@ -26,7 +26,7 @@ app.post('/', newTaskToDo);
 
 app.put('/', updateTaskOfToDo);
 
-app.delete('/', deleteTaskOfToDo);
+app.delete('/:id', deleteTaskOfToDo);
 
 // rotas ***********
 

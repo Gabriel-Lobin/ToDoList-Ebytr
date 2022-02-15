@@ -42,7 +42,7 @@ const updateTaskOfToDo = async (req, res, next) => {
 
 const deleteTaskOfToDo = async (req, res, next) => {
     try {
-        const { _id: id } = req.body;
+        const { id } = req.params;
         const deletedTasId = await deleteTaskService(id);
 
         return res.status(201).json(`task deletada de id: ${deletedTasId}`);
