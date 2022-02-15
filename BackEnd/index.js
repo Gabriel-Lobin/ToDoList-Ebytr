@@ -24,7 +24,7 @@ app.get('/', getAllListOfToDo);
 
 app.post('/', newTaskToDo);
 
-app.put('/', updateTaskOfToDo);
+app.put('/:id', updateTaskOfToDo);
 
 app.delete('/:id', deleteTaskOfToDo);
 

@@ -30,7 +30,8 @@ const newTaskToDo = async (req, res, next) => {
 
 const updateTaskOfToDo = async (req, res, next) => {
     try {
-        const { _id: id, task, status } = req.body;
+        const { task, status } = req.body;
+        const { id } = req.params;
         const updatedTaskId = await updateTasksService(id, task, status);
 
         return res.status(201).json(`Task atualizada de id: ${updatedTaskId}`);
