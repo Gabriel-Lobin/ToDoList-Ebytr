@@ -15,23 +15,21 @@ function Home() {
     }
 
     return (
-        <div>
-            <ul>
-                {todos.length === 0
-                    ? <>Está Vazio por Aqui!!!</>
-                    : todos.map(({ _id, task, status, created }, index) => (
-                        <ToDoCard
-                            key={index}
-                            index={index}
-                            id={_id}
-                            task={task}
-                            status={status}
-                            created={created}
-                            deleteTask={deleteTask}
-                        />
-                    ))}
-            </ul>
-        </div>
+        <ul>
+            {todos.length === 0
+                ? <>Está Vazio por Aqui!!!</>
+                : todos.map(({ _id, task, status, created }, index) => (
+                    <ToDoCard
+                        key={index}
+                        index={index}
+                        id={_id}
+                        task={task}
+                        status={status}
+                        created={created}
+                        deleteTask={deleteTask}
+                    />
+                ))}
+        </ul>
     );
 };
 
