@@ -40,11 +40,11 @@ $ docker run --name mongodb -d -p 27017:27017 mongo
 ```
 **Somente para se tiver o Docker**
 
-## Rodando o projeto
+# Rodando o projeto
 
 
 
-1 - clonando repositório
+## 1 - clonando repositório
 
 
 
@@ -58,8 +58,18 @@ git clone git@github.com:Gabriel-Lobin/ToDoList-Ebytr.git
 git clone https://github.com/Gabriel-Lobin/ToDoList-Ebytr.git
 ```
 
+## 2 - Testando Back
 
-2 - rodando Front e Back
+```
+cd BackEnd
+```
+
+```
+npm test
+```
+
+
+## 3 - rodando Front e Back
 
 
 
