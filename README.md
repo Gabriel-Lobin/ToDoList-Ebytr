@@ -13,21 +13,25 @@ Projeto de desafio tecnico para Ebytr
 Projeto feito com:
 
 
-  * FrontEnd
+* FrontEnd
 
-    React
-    Context
+React
 
-  * BackEnd
+Context
 
-    Mongodb
-    Node.js
-    Express
+* BackEnd
 
-  * Testes
+Mongodb
 
-    mocha
-    Sinon
+Node.js
+
+Express
+
+* Testes
+
+mocha
+
+Sinon
 
 
 
