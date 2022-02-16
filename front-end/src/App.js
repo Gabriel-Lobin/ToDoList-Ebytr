@@ -1,11 +1,11 @@
-import Home from './pages/home';
+import Tasks from './pages/Tasks';
 
 function App() {
   return (
     <div>
       <header>To Do List Ebytr!!!
-      </header>
-      <Home />
+      </header>      
+      <Tasks />
       <footer>
         Github: Gabriel-Lobin
       </footer>
