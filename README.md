@@ -1,7 +1,55 @@
 # EM DESENVOLVIMENTO 
 
-ToDoList-Ebytr
+## ToDoList-Ebytr
 
-### Rodar server mongo com docker
+    Projeto de desafio tecnico para Ebytr
+
+ - projeto feito com:
+  * FrontEnd
+
+    React
+    Context
+
+  * BackEnd
+
+    Mongodb
+    Node.js
+    Express
+
+  * Testes
+
+    mocha
+    Sinon
+
+## Rodar server mongo com docker
 
 * `$ docker run --name mongodb -d -p 27017:27017 mongo`
+    **Somente para se tiver o Docker**
+
+## Rodando o projeto
+
+1 - clonando repositório
+
+    clonando com SSH:    
+* `git clone git@github.com:Gabriel-Lobin/ToDoList-Ebytr.git`
+
+    clonando com HTTPS:
+* `git clone https://github.com/Gabriel-Lobin/ToDoList-Ebytr.git`
+
+2 - rodando Front e Back
+
+    Back:
+* `cd BackEnd`    
+* `npm i` ou `npm install`
+* 'npm start'
+    **Agora o Console deve Avisar "servidor rodando na porta: 3001!"**
+
+    Front:
+* `cd..` 
+    **caso esteja na pasta do backend ainda :D**
+* `cd front-end`
+* `npm i` ou `npm install`
+* 'npm start'
+
+
+

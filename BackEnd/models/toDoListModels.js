@@ -19,7 +19,6 @@ const addNewTaskModel = async (task, status) => {
         status,
         created: new Date(),
     });
-    console.log('Nova Task Adicionada!!!');
     return insertedId;
 };
 
