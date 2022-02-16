@@ -1,5 +1,5 @@
 const { ObjectId } = require('mongodb');
-const connection = require('./connectionMongo');
+const { connection } = require('./connectionMongo');
 
 const COLLECTION_TODO = 'todolist';
 

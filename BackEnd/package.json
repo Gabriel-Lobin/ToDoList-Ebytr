@@ -4,9 +4,9 @@
   "description": "projeto do processo seletivo trybe blitz",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "mocha ./tests/*$NAME*.test.js --exit"
   },
   "author": "Gabriel-Lobin",
   "license": "ISC",

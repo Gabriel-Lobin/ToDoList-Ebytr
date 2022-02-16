@@ -4,7 +4,7 @@ require('dotenv').config();
 const MONGO_DB_URL = `mongodb://${process.env.HOST || 'mongodb'}:27017/ToDoListEbytr`;
 const DB_NAME = 'ToDoListEbytr';
 
-module.exports = () =>
+const connection = () =>
     mongodb
         .connect(MONGO_DB_URL, {
             useNewUrlParser: true,
@@ -15,3 +15,5 @@ module.exports = () =>
             console.error(err);
             process.exit(1);
         });
+
+module.exports = { connection };        
