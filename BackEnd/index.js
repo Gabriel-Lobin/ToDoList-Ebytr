@@ -13,6 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
+
 app.use(cors({
     origin: 'http://localhost:3000',
     methods: ['POST', 'GET', 'DELETE', 'PUT']
@@ -22,7 +23,7 @@ app.use(cors({
 
 app.get('/', getAllListOfToDo);
 
-app.post('/', newTaskToDo);
+app.post('/post', newTaskToDo);
 
 app.put('/:id', updateTaskOfToDo);
 

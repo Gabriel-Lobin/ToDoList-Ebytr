@@ -18,7 +18,7 @@ const getAllListOfToDo = async (req, res, next) => {
 
 const newTaskToDo = async (req, res, next) => {
     try {
-        const { task, status } = req.body;
+        const { task, status } = req.body;        
         const newTaskId = await addNewTaskService(task, status);
 
         return res.status(201).json(`Task nova de Id: ${newTaskId}`);
