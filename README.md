@@ -52,17 +52,19 @@ $ docker run --name mongodb -d -p 27017:27017 mongo
 
 
 
-    clonando com SSH:    
+clonando com SSH:    
+
 ```
 git clone git@github.com:Gabriel-Lobin/ToDoList-Ebytr.git
 ```
 
-    clonando com HTTPS:
+clonando com HTTPS:
+
 ```    
 git clone https://github.com/Gabriel-Lobin/ToDoList-Ebytr.git
 ```
 
-## 2 - Testando Back
+## 2 - Testando BackEnd
 
 ```
 cd BackEnd
@@ -73,11 +75,11 @@ npm test
 ```
 
 
-## 3 - rodando Front e Back
+## 3 - rodando FrontEnd e BackEnd
 
 
 
-Back:
+BackEnd:
   
   
 ```
@@ -92,20 +94,20 @@ npm install
 npm start
 ```
     
-**Agora o Console deve Avisar "servidor rodando na porta: 3001!"**
+**Agora o console deve avisar "servidor rodando na porta: 3001!"**
 
 
-Front:
+FrontEnd:
 
 
-**caso esteja na pasta do backend ainda :D**
+**Caso ainda esteja na pasta do backend :D**
  ```
  cd..
  ```
-    
+**Caso não esteja na pasta do backend :D**  
 
 ```
-cd BackEnd
+cd front-end
 ```
  
 ```
@@ -115,7 +117,7 @@ npm install
 ```
 npm start
 ```
-**Agora o Console mostra o server React e abre uma aba no navegador**
+**Agora o console mostra o server React e abre uma aba no navegador**
 
 ## Autoria
 
